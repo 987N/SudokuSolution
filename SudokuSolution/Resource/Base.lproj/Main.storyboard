@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="SudokuSolution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAp-XV-4Lm">
+                                <rect key="frame" x="139" y="408.66666666666669" width="115" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="添加图片"/>
+                                <connections>
+                                    <action selector="getImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ0-Ci-unb"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-UN-tBu">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTe-wZ-sUp">
+                                <rect key="frame" x="150.66666666666666" y="709" width="92" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="开始解算"/>
+                                <connections>
+                                    <action selector="soloverSudoku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERt-5e-elG"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对照游戏，确定识别正确后即可解算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9l-ah-QUd">
+                                <rect key="frame" x="61.666666666666657" y="673" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h9l-ah-QUd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Pl-aB-vJP"/>
+                            <constraint firstItem="fTe-wZ-sUp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-40" id="JOH-of-SdR"/>
+                            <constraint firstItem="OAp-XV-4Lm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W3e-OJ-QUo"/>
+                            <constraint firstItem="fTe-wZ-sUp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cLv-TT-WN8"/>
+                            <constraint firstItem="OAp-XV-4Lm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hTl-qA-PXL"/>
+                            <constraint firstItem="fTe-wZ-sUp" firstAttribute="top" secondItem="h9l-ah-QUd" secondAttribute="bottom" constant="15" id="iaj-ML-ZHr"/>
+                            <constraint firstItem="jq7-UN-tBu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lkQ-aB-q5z"/>
+                            <constraint firstItem="jq7-UN-tBu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wr4-7p-K7x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="jq7-UN-tBu" id="BXI-6g-QL8"/>
+                        <outlet property="getImageButton" destination="OAp-XV-4Lm" id="Dn4-80-Qc8"/>
+                        <outlet property="solverButton" destination="fTe-wZ-sUp" id="bt9-Ee-8tR"/>
+                        <outlet property="tipLabel" destination="h9l-ah-QUd" id="Gf4-pp-a3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
