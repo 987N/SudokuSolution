@@ -129,7 +129,7 @@ class MainVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCon
             make.top.equalToSuperview().offset(100)
             make.leading.equalToSuperview().offset(15)
             make.trailing.equalToSuperview().offset(-15)
-            make.height.equalTo(size.height * 9)
+            make.height.equalTo(size.height * 9 + 30)
         }
         
         for row in sudokuData! {

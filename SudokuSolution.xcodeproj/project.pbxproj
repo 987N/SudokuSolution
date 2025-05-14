@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3661D55F2DD2E78E006FF7CE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3661D55E2DD2E78E006FF7CE /* SnapKit */; };
 		3661D5622DD2E7B6006FF7CE /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3661D5612DD2E7B6006FF7CE /* SwifterSwift */; };
-		3661D5642DD2EF41006FF7CE /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661D5632DD2EF41006FF7CE /* testImage.png */; };
 		3661D5662DD2F117006FF7CE /* ImagePreprocessingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661D5652DD2F117006FF7CE /* ImagePreprocessingTool.swift */; };
 		3661D56A2DD30CA3006FF7CE /* SudokuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661D5692DD30CA3006FF7CE /* SudokuItem.swift */; };
 		3661D56C2DD30D5F006FF7CE /* ImageSegmentationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661D56B2DD30D5F006FF7CE /* ImageSegmentationTool.swift */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3661D5632DD2EF41006FF7CE /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		3661D5652DD2F117006FF7CE /* ImagePreprocessingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessingTool.swift; sourceTree = "<group>"; };
 		3661D5692DD30CA3006FF7CE /* SudokuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuItem.swift; sourceTree = "<group>"; };
 		3661D56B2DD30D5F006FF7CE /* ImageSegmentationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSegmentationTool.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 		36A081DE2DD2D7E700F94CDB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				3661D5632DD2EF41006FF7CE /* testImage.png */,
 				36A081D82DD2D7E700F94CDB /* Assets.xcassets */,
 				36A081D92DD2D7E700F94CDB /* Info.plist */,
 				36A081DB2DD2D7E700F94CDB /* LaunchScreen.storyboard */,
@@ -172,7 +169,6 @@
 				36A081DF2DD2D7E700F94CDB /* Assets.xcassets in Resources */,
 				36A081E12DD2D7E700F94CDB /* LaunchScreen.storyboard in Resources */,
 				36A081E22DD2D7E700F94CDB /* Main.storyboard in Resources */,
-				3661D5642DD2EF41006FF7CE /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
